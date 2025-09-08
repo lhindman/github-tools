@@ -14,7 +14,7 @@ The refresh_invitation script automates this script as follows:
 ```
 for each student_repo in github_organization:
     if student_repo created within the past 24 hours:
-        for each account on repo collaborators list:
+        for each account on student_repo.collaborators_list:
             if account.status is 'pending':
                 remove_from_collaborators_list(account)
                 add_to_collaborators_list(account,'write_access')
@@ -24,3 +24,22 @@ for each student_repo in github_organization:
 This script takes several minutes to run on organizations with 10s of 1000s of repositories.
 
 ## Tool Setup
+First, clone the tool repo from GitHub
+```
+git clone 
+```
+### Python Packages
+This tool has been tested with Python version 3.12.7. The only package I needed to install that was not part of the default python development environment was **python-decouple**.
+
+### GitHub Access
+1. Open Github Account Settings then select ***Developer Tools***  located at the bottom of the left panel.
+2. Select ***Personal Access Token*** and then ***Token (classic)***  
+3. Create a new Token with the following scopes: repo, admin:org
+4. Set the name and expiration date as desired. I used an expiration date of 1 year
+5. Record the new Personal Access Token
+
+### Create Environment Configuration File
+In the root of the code repo create a .env file with the following variables set
+```
+
+```
