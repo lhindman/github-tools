@@ -24,7 +24,7 @@ for each student_repo in github_organization:
 
 This script takes several minutes to run on organizations with 10s of 1000s of repositories. When the students are added to the repos, invite emails are sent to the student with the invite link. This is handled automatically by GitHub. Students just need to open this email and click the link to accept the invite.
 
-# Usage
+## Usage
 By default, the tool is set for "dry_run" mode which allows testing of the core functionality and configuration without affecting the student repositories.  When you are ready to run the code in a live environment, edit the refresh_invitations.py script and change the DRY_RUN variable from True to False.
 
 ```
