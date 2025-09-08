@@ -10,7 +10,7 @@ To manually work around this issue, perform the following steps:
 This generates an invite email from GitHub that is sent to the student's registered email address(es). You can also copy the invite link and email it directly to the student. Once the student clicks the updated invite link, they are able to access their repository without issue. (usually)
 
 
-The refresh_invitation script automates this script as follows:
+The refresh_invitation script automates this process as follows:
 
 ```
 for each student_repo in github_organization:
