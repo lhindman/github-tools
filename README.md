@@ -55,7 +55,7 @@ This tool has been tested with Python version 3.12.7. The only package I needed 
 5. Record the new Personal Access Token
 
 ### Create Environment Configuration File
-In the root of the code repo create a .env file with the following variables set
+In the root of the github-tools repo create a .env file with the following variables set
 ```
 GITHUB_TOKEN="<paste GitHub personal access token here>"
 ORG="GitHub Classroom Organization"
