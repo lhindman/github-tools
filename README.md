@@ -1,4 +1,4 @@
-# GitHub Tools
+# GitHub Refresh Repository Invitation Tool
 The primary tool in this repository is the refresh_invitations.py script.  There has recently been an issue with GitHub classroom where students are unable to access their private assignment repositories after they accept an assignment.  The private repository is created successfully and when I own the repository settings and click on the Collaborators page it shows the student's GitHub username with a status stating that the invite is pending. However, when they click the invite link in their email it shows that the invite has expired.  
 
 To manually work around this issue, perform the following steps:  
@@ -24,7 +24,7 @@ for each student_repo in github_organization:
 
 This script takes several minutes to run on organizations with 10s of 1000s of repositories. When the students are added to the repos, invite emails are sent to the student with the invite link. This is handled automatically by GitHub. Students just need to open this email and click the link to accept the invite.
 
-# Tool Usage
+# Usage
 By default, the tool is set for "dry_run" mode which allows testing of the core functionality and configuration without affecting the student repositories.  When you are ready to run the code in a live environment, edit the refresh_invitations.py script and change the DRY_RUN variable from True to False.
 
 ```
