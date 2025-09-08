@@ -26,7 +26,7 @@ This script takes several minutes to run on organizations with 10s of 1000s of r
 ## Tool Setup
 First, clone the tool repo from GitHub
 ```
-git clone 
+git clone git@github.com:lhindman/github-tools.git
 ```
 ### Python Packages
 This tool has been tested with Python version 3.12.7. The only package I needed to install that was not part of the default python development environment was **python-decouple**.
@@ -41,5 +41,6 @@ This tool has been tested with Python version 3.12.7. The only package I needed 
 ### Create Environment Configuration File
 In the root of the code repo create a .env file with the following variables set
 ```
-
+GITHUB_TOKEN="<paste GitHub personal access token here>"
+ORG="GitHub Classroom Organization"
 ```
