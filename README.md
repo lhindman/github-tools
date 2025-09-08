@@ -1,5 +1,5 @@
 # GitHub Refresh Repository Invitation Tool
-The primary tool in this repository is the refresh_invitations.py script.  There has recently been an issue with GitHub classroom where students are unable to access their private assignment repositories after they accept an assignment.  The private repository is created successfully and when I own the repository settings and click on the Collaborators page it shows the student's GitHub username with a status stating that the invite is pending. However, when they click the invite link in their email it shows that the invite has expired.  
+The primary tool in this repository is the refresh_invitations.py script.  There has recently been an issue with GitHub classroom where students are unable to access their private assignment repositories after they accept an assignment.  The private repository is created successfully and when I open the repository settings and click on the Collaborators page it shows the student's GitHub username with a status stating that the invite is pending. However, when they click the invite link in their email it shows that the invite has expired.  
 
 To manually work around this issue, perform the following steps:  
 1. Record the student's GitHub username.
